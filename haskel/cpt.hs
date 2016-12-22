@@ -11,3 +11,4 @@ mulP (Polar d r) n = (d * n, r)
 
 point2 :: Polar 
 point2 = Polar 10 (pi /6)
+
