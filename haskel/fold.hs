@@ -21,3 +21,10 @@ myLength = fldr (const(1+))0
 myFldr :: (a -> b -> b) -> b -> [a] -> b
 myFldr op v (x :xs) = x `op` myFldr op v xs
 myFldr _  v [] = v
+
+sumIter :: Integer -> [Integer]-> Integer
+sumIter s [] = s
+sumIter s (x : xs) = sumIter (s + x) xs
+
+mySumL :: [Integer] -> Integer
+mySumL = SumIter 0
